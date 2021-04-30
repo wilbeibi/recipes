@@ -1,4 +1,4 @@
-## Tips 
+## Tips
 - [deprecated]`git ls-files | xargs cloc`: Count lines of code in git repo
 - `twistd -n ftp -r ./`: FTP server on port 2121; `twistd -n web -p 8080 --path .`: web server on port 8080 (`twistd -n -h` for more services like ssh, dns, mail, socks)
 - `watch -n 0 <command>`: run any command every 0.1s
@@ -23,12 +23,12 @@
 - `pv`: "pipe viewer", show stats on data going through a pipe
 - `sed s/foo/bar/g file.txt`, `foo` can be a regular expression
     - GNU and BSD sed behaviors differently in `-i`, so [always use](https://stackoverflow.com/a/22084103/1035859) `-i.bak`
-    - `sed -n 12p` print 12th line, `sed -n 5, 30p` print liens 5-30. `-n` suppresses output so only `p`'s part gets printed 
+    - `sed -n 12p` print 12th line, `sed -n 5, 30p` print liens 5-30. `-n` suppresses output so only `p`'s part gets printed
     - `sed 5d` delete 5th line, `sed /foo/d` delete lines matching `/foo/`
     - `sed '/foo/a bar'` append 'bar' after lines containing 'foo'
 - [awk](https://coolshell.cn/articles/9070.html): `docker ps | awk {'print $1'}` print first column container ID
     - `$NF` for total number, last column
-- [less](https://twitter.com/b0rk/status/1005470181240508417): '/' search, 'n/N' next/prev match, 'j/K' down/up a line, 
+- [less](https://twitter.com/b0rk/status/1005470181240508417): '/' search, 'n/N' next/prev match, 'j/K' down/up a line,
     'g/G' begining/end of file
     - `less -r` display bash escape codes as colors
     - `v` to edit file, `F` to keep reading as updated
@@ -39,11 +39,11 @@
 - `date -u`: show UTC time now
 - `set -x` enables a mode of the shell where all executed commands are printed to the terminal
 - `MY_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)` [refer](https://unix.stackexchange.com/a/81699/36211)
-- `&&` in bash is "AND", statement to the left as well as right of `&&` should be run in sequence, `&` means preceding commands, 
+- `&&` in bash is "AND", statement to the left as well as right of `&&` should be run in sequence, `&` means preceding commands,
     to the immediate left of the `&`, should simply run in the background
 - `dig -t A wilbeibi.com +trace` trace DNS resolve
 - `vim scp://user@server/~/data.txt`: edit file on remote server
--  `echo $PATH|tr ":" "\n"`: show directories in PATH, one per line 
+-  `echo $PATH|tr ":" "\n"`: show directories in PATH, one per line
 - `ssh -L 80:localhost:8080 remotehost`: browser visit localhost:80 is actually get response from remotehost:8080
 - `ssh -R 8080:localhost:80 remotehost`: vice versa
 - [ssh jump host config](https://gist.github.com/wilbeibi/1505fcd81f7376cdd91cd370d2dd9204)
@@ -54,6 +54,8 @@
 - [just](https://github.com/casey/just): makefile better alternative, can used to save recipes as well
 - [asciinema](https://asciinema.org/): recording terminal sessions
 - [ffsend](https://github.com/timvisee/ffsend): Firefox Send client
+- `say` command, robot voice
+- [gitall.rs](https://github.com/mattmahn/gitall.rs) recursively finds all repositories below a directory and runs the given git command in each repository in parallel.
 ## ZSH
 + `cd /u/l/b`: path expansion
 + `cd site1 site2`: path replacement, if you were in /srv/www/site1/current/log, it will go to /srv/www/site2/current/log via this command

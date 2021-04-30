@@ -68,7 +68,7 @@
     + `b`: search in bookmarks
     + `T`: sarch in open tabs
     + `O`: Open URL, bookmark or history entry in a new tab
-    
+
 # Supervisord
 ```
 # /etc/supervisor/conf.d/*.conf
@@ -121,5 +121,6 @@ stdout_logfile=/var/log/test1.log
 + [LaTex cheat sheet](https://wch.github.io/latexsheet/)
 + Debug Chrome CPU hogging: Invoke `Chrome Menu / More Tools / Task Manager` to see what consumes CPU
 + <kbd>Fn</kbd> + <kbd>Q</kbd> to bluetooth pairing HHKB to Mac
-+ `neofetch` to show system info
++ `neofetch` to show system info (`onefetch`)
 + [search my gists](https://gist.github.com/search?utf8=%E2%9C%93&q=user%3Awilbeibi&ref=searchresults)
++ [playwright-python](https://github.com/microsoft/playwright-python) automate Chromium, Firefox and WebKit browsers with a single API
