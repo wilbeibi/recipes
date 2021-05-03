@@ -31,8 +31,8 @@
     + `code -g file:linenum`: Open file on the specific line
 + open file from `rg` results:
   + make an alias `rg2="rg --no-heading"` and install vscode command line tool
-  + refer [here](https://stackoverflow.com/a/38906859/1035859), set "Semantic History section", run command as
-/usr/local/bin/code -g \1:\2
+  + refer [here](https://stackoverflow.com/a/38906859/1035859), set "Semantic History section", run command as `/usr/local/bin/code -g \1:\2`,
+same for intellij `/usr/local/bin/idea \1:\2`.
 ### shell integration
 + `code .` : Open the current folder in a new window
 + `code -r .` : Open the current folder in the current window
