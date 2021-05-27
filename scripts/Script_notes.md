@@ -131,6 +131,7 @@
 + `lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit`
 + `sweep = !git gc --prune=now && git repack -Ad`
 + `lh =  "!f() { git log --pretty=short -u -L \"$1,$1:$2\"; }; f"`
++ `vim = "nvim"`
 
 ## ripgrep & silver searcher
 - `rg -F -e` to search literal string
