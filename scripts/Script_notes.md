@@ -69,6 +69,7 @@
 + `sh -c "$(wget https://example.com/execute.sh -0 -)"`: download and execute command
 + <kbd>⌘</kbd> + <kbd>.</kbd>: recall the last argument of any of the previous commands
 + theme: spaceship, font: 14pt Fira Mono for Powerline
++ starship: `cargo install starship --features=notify-rust`
 ## jq
 - `jq`: 'fromjson' to unescape, 'tojson' to escape when parsing
 
